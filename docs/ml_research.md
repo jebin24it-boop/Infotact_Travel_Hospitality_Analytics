@@ -1,0 +1,56 @@
+# ML Research
+
+## Target Variable Analysis
+
+Target Column: booking_status
+
+Prediction Type: Binary Classification
+
+Classes:
+
+* Canceled
+* Not_Canceled
+
+Business Impact:
+Predicting cancellations helps hotels reduce revenue loss and improve booking management.
+
+---
+
+## Feature Selection
+
+Selected Features:
+
+* no_of_adults
+* no_of_children
+* no_of_weekend_nights
+* no_of_week_nights
+* type_of_meal_plan
+* required_car_parking_space
+* room_type_reserved
+* lead_time
+* arrival_year
+* arrival_month
+* arrival_date
+* market_segment_type
+* repeated_guest
+* no_of_previous_cancellations
+* no_of_previous_bookings_not_canceled
+* avg_price_per_room
+* no_of_special_requests
+
+Excluded Feature:
+
+* Booking_ID
+
+Reason:
+Booking_ID is a unique identifier and has no predictive value.
+
+---
+
+## Business Objectives
+
+1. Predict booking cancellations.
+2. Identify high-risk bookings.
+3. Reduce revenue leakage.
+4. Support customer retention strategies.
+5. Support future dynamic pricing decisions.
