@@ -1,45 +1,55 @@
-# 🏨 Hotel Reservation Cancellation Prediction using Machine Learning
+# 🏨 Hotel Reservation Cancellation Prediction using Data Analytics & Machine Learning
 
 ## 📌 Project Overview
 
-This project was developed as part of the **Infotact Solutions Data Analytics Internship (Project 2)**.
+This project was developed as part of the **Infotact Solutions Data Analytics Internship – Project 2**.
 
-The objective of this project is to analyze hotel reservation data and build machine learning models capable of predicting whether a booking is likely to be cancelled. Early prediction of cancellations helps hotels improve revenue management, optimize room allocation, and enhance customer retention strategies.
+The objective of this project is to analyze hotel reservation data, understand booking patterns, identify the factors influencing booking cancellations, visualize business insights through interactive dashboards, and develop machine learning models capable of predicting whether a hotel reservation is likely to be cancelled.
 
----
-
-# 🎯 Objectives
-
-- Analyze hotel reservation booking patterns.
-- Perform data preprocessing and feature engineering.
-- Build predictive machine learning models.
-- Compare multiple classification algorithms.
-- Identify important factors influencing booking cancellations.
-- Generate business recommendations based on model insights.
+The project combines **Data Cleaning, Exploratory Data Analysis (EDA), Dashboard Development, and Machine Learning** to provide valuable business insights for the hospitality industry.
 
 ---
 
-# 📂 Dataset Information
+# 🎯 Project Objectives
 
-**Dataset Name**
+- Analyze hotel reservation booking data.
+- Clean and preprocess raw data.
+- Perform Exploratory Data Analysis (EDA).
+- Engineer meaningful features.
+- Build an interactive Power BI dashboard.
+- Train and evaluate machine learning models.
+- Predict hotel booking cancellations.
+- Generate business insights and recommendations.
+
+---
+
+# 📊 Dataset Information
+
+### Dataset Name
 
 Hotel Reservation Dataset
 
-**Source**
+### Source
 
-Provided by Infotact Solutions for internship project.
+Provided by **Infotact Solutions** for Data Analytics Internship Project 2.
 
-**Dataset Size**
+### Dataset Statistics
 
-- Rows: 35,555
-- Columns: 25
+| Attribute | Raw Dataset | Cleaned Dataset |
+|-----------|------------:|----------------:|
+| Records | 35,555 | 35,555 |
+| Features | 18 | 25 |
+| Missing Values | Present | 0 |
+| Duplicate Records | Checked | Removed (if any) |
+| Feature Engineering | Not Applied | Applied |
+| Machine Learning Ready | ❌ No | ✅ Yes |
 
-**Target Variable**
+### Target Variable
 
-booking_status
+**booking_status**
 
-- 0 → Cancelled
-- 1 → Not Cancelled
+- **0** → Cancelled
+- **1** → Not Cancelled
 
 ---
 
@@ -55,11 +65,15 @@ Infotact_Travel_Hospitality_Analytics/
 │   └── hotel_reservations_ml_ready.csv
 │
 ├── notebooks/
+│   ├── eda.ipynb
+│   ├── dashboard_analysis.ipynb
 │   └── ml_preprocessing.ipynb
 │
 ├── dashboard/
+│   └── Hotel_Dashboard.pbix
 │
 ├── reports/
+│   ├── business_insights.md
 │   ├── ml_findings.md
 │   ├── business_recommendations.md
 │   ├── model_summary.md
@@ -67,30 +81,46 @@ Infotact_Travel_Hospitality_Analytics/
 │
 ├── docs/
 │
-├── README.md
+└── README.md
 ```
 
 ---
 
-# 👥 Team Members
+# 👥 Team Members & Responsibilities
 
-| Member | Responsibility |
-|---------|---------------|
-| **Jebin Joy** | Machine Learning & Predictive Analytics |
-| **Saurav Gopinath** | Data Cleaning & Preprocessing |
-| **Rivya Roy** | Exploratory Data Analysis & Dashboard Development |
+| Team Member | Responsibility |
+|-------------|---------------|
+| **Jebin Joy (Team Leader)** | Machine Learning, Predictive Analytics, Documentation & GitHub Management |
+| **Saurav Gopinath** | Data Cleaning, Data Preprocessing & Feature Engineering |
+| **Rivya Roy** | Exploratory Data Analysis (EDA), Data Visualization & Power BI Dashboard |
 
 ---
 
-# ⚙️ Technologies Used
+# 🛠 Technologies Used
+
+### Programming
 
 - Python
+
+### Libraries
+
 - Pandas
 - NumPy
 - Scikit-learn
 - Matplotlib
 - Seaborn
+
+### Visualization
+
 - Power BI
+
+### Development Tools
+
+- VS Code
+- Jupyter Notebook
+
+### Version Control
+
 - Git
 - GitHub
 
@@ -98,34 +128,161 @@ Infotact_Travel_Hospitality_Analytics/
 
 # 🔄 Project Workflow
 
-## Week 1
+## Week 1 – Data Preparation
 
-- Machine Learning Planning
-- Feature Selection
-- Workflow Preparation
-- Research on Classification Models
+- Repository Setup
+- Dataset Collection
+- Data Cleaning
+- Missing Value Handling
+- Duplicate Checking
+- Data Validation
+- Initial Project Planning
 
 ---
 
-## Week 2
+## Week 2 – Analysis & Preprocessing
 
+- Exploratory Data Analysis
+- Statistical Analysis
+- Feature Engineering
+- Data Visualization
+- Dashboard Planning
+- Machine Learning Dataset Preparation
+
+---
+
+## Week 3 – Dashboard & Machine Learning
+
+### Dashboard
+
+- KPI Development
+- Interactive Dashboard
+- Booking Analysis
+- Pricing Analysis
+- Customer Analysis
+
+### Machine Learning
+
+- Logistic Regression
+- Decision Tree
+- Model Evaluation
+- Feature Importance
+- Model Comparison
+
+---
+
+## Week 4 – Documentation & Reporting
+
+- Business Insights
+- Business Recommendations
+- Final Report
+- README Documentation
+- GitHub Finalization
+- Project Submission
+
+---
+
+# 🧹 Data Cleaning & Preprocessing
+
+The dataset was cleaned and prepared before analysis.
+
+Tasks Performed:
+
+- Missing Value Handling
+- Duplicate Record Checking
+- Data Type Validation
+- Feature Engineering
 - Dataset Validation
+- Machine Learning Dataset Preparation
+
+---
+
+# 📊 Exploratory Data Analysis (EDA)
+
+EDA was performed to understand booking behaviour and discover meaningful business patterns.
+
+Analysis Included:
+
+- Booking Status Distribution
+- Lead Time Analysis
+- Average Room Price Analysis
+- Room Type Analysis
+- Meal Plan Analysis
+- Market Segment Analysis
+- Guest Composition Analysis
+- Booking Segment Analysis
+- Correlation Analysis
+
+---
+
+# 📈 Feature Engineering
+
+Additional features were created to improve analysis and predictive performance.
+
+New Features:
+
+- arrival_date_full
+- descriptive_room_type
+- descriptive_meal_plan
+- total_guests
+- total_nights
+- revenue_per_night
+- booking_segment
+
+---
+
+# 📊 Dashboard Development
+
+An interactive Power BI dashboard was developed to visualize booking behaviour and business performance.
+
+Dashboard Components:
+
+### KPI Cards
+
+- Total Bookings
+- Cancelled Bookings
+- Successful Bookings
+- Cancellation Rate
+- Average Room Price
+- Average Lead Time
+
+### Charts
+
+- Booking Status Distribution
+- Market Segment Analysis
+- Room Type Distribution
+- Meal Plan Analysis
+- Lead Time Analysis
+- Booking Segment Analysis
+- Average Room Price Comparison
+- Monthly Booking Trend
+
+### Interactive Features
+
+- Filters
+- Slicers
+- Cross Filtering
+- Dynamic Visualizations
+
+---
+
+# 🤖 Machine Learning
+
+The cleaned dataset was prepared for predictive modeling.
+
+### Data Preparation
+
 - Feature Selection
 - Removal of Redundant Columns
-- Encoding Categorical Variables
-- Feature Matrix Preparation
+- Label Encoding
 - Train-Test Split
 
----
-
-## Week 3
-
-Machine Learning Models
+### Models Trained
 
 - Logistic Regression
 - Decision Tree Classifier
 
-Model Evaluation
+### Evaluation Metrics
 
 - Accuracy
 - Precision
@@ -134,138 +291,66 @@ Model Evaluation
 - Confusion Matrix
 - ROC-AUC Score
 
-Model Comparison
+### Model Comparison
 
-Feature Importance Analysis
-
-Selection of Best Performing Model
-
----
-
-## Week 4
-
-- Machine Learning Findings
-- Business Recommendations
-- Final Documentation
-- README Update
-- Final Project Report
-
----
-
-# 📊 Machine Learning Pipeline
-
-```
-Cleaned Dataset
-
-↓
-
-Feature Selection
-
-↓
-
-Data Encoding
-
-↓
-
-Train-Test Split
-
-↓
-
-Logistic Regression
-
-↓
-
-Decision Tree
-
-↓
-
-Model Evaluation
-
-↓
-
-Model Comparison
-
-↓
-
-Business Recommendations
-```
-
----
-
-# 📈 Evaluation Metrics
-
-The following metrics were used to evaluate model performance:
-
-- Accuracy
-- Precision
-- Recall
-- F1 Score
-- Confusion Matrix
-- ROC-AUC Score
-
----
-
-# 🔍 Key Features Used
-
-- Number of Adults
-- Number of Children
-- Weekend Nights
-- Week Nights
-- Meal Plan
-- Room Type Reserved
-- Lead Time
-- Market Segment
-- Repeated Guest
-- Previous Cancellations
-- Previous Successful Bookings
-- Average Price Per Room
-- Special Requests
-- Total Guests
-- Total Nights
-- Booking Segment
+Both models were evaluated and compared to determine the best-performing classifier for booking cancellation prediction.
 
 ---
 
 # 📌 Business Insights
 
-The project identifies booking characteristics that influence cancellation behaviour.
+The project identified several booking characteristics that influence hotel reservation cancellations.
 
-Key insights include:
+Key observations include:
 
-- Longer lead time bookings tend to have higher cancellation probability.
-- Repeat guests generally exhibit lower cancellation rates.
-- Market segment influences booking behaviour.
-- Room pricing impacts cancellation likelihood.
-- Customer booking patterns help improve operational planning.
+- Longer lead-time bookings show higher cancellation probability.
+- Repeat guests are less likely to cancel reservations.
+- Market segment significantly influences booking behaviour.
+- Room pricing affects customer cancellation decisions.
+- Booking patterns vary across different customer segments.
 
 ---
 
 # 💡 Business Recommendations
 
-- Monitor long lead-time reservations.
-- Offer loyalty benefits to repeat guests.
-- Develop pricing strategies based on demand.
+Based on the analysis and machine learning results, the following recommendations were proposed:
+
+- Monitor long lead-time bookings.
+- Improve customer loyalty programs.
+- Optimize room pricing strategies.
 - Focus retention efforts on high-risk customer groups.
-- Use predictive models to identify cancellation risk before arrival.
+- Use predictive analytics to identify potential cancellations before arrival.
+- Improve operational planning using cancellation forecasts.
 
 ---
 
-# 🚀 Future Enhancements
+# 🚀 Future Scope
+
+Possible future enhancements include:
 
 - Random Forest Classifier
 - XGBoost
 - Hyperparameter Tuning
 - Cross Validation
-- Deployment using Flask or Streamlit
-- Real-time Booking Cancellation Prediction
+- Real-time Prediction System
+- Flask/Streamlit Deployment
+- Cloud Deployment
+- Live Dashboard Integration
 
 ---
 
 # 📌 Project Outcome
 
-Successfully developed a machine learning pipeline capable of predicting hotel booking cancellations and identifying important factors affecting customer cancellation behaviour.
+Successfully developed a complete end-to-end hospitality analytics solution that combines:
 
-The project demonstrates how predictive analytics can support business decision-making within the hospitality industry.
+- Data Cleaning
+- Exploratory Data Analysis
+- Feature Engineering
+- Interactive Dashboard
+- Machine Learning
+- Business Insights
+
+The project demonstrates how data analytics and predictive modeling can help hotels reduce booking cancellations, improve operational efficiency, and support data-driven decision-making.
 
 ---
 
@@ -277,4 +362,4 @@ This project was developed for educational and internship purposes under **Infot
 
 # 🙏 Acknowledgement
 
-We sincerely thank **Infotact Solutions** for providing the opportunity, guidance, and dataset to complete this project successfully.
+We sincerely thank **Infotact Solutions** for providing the opportunity, mentorship, and dataset that enabled us to complete this project successfully. We also appreciate the guidance provided throughout the internship, which helped us strengthen our practical knowledge of Data Analytics, Visualization, and Machine Learning.
